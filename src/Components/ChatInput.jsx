@@ -11,7 +11,7 @@ const ChatInput = ()=>{
   const dispatch = useDispatch();
   const conf = new Configuration(
     {
-      apiKey:'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'
+      apiKey:'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'
     }
   )
   const openai = new OpenAIApi(conf)
