@@ -11,7 +11,7 @@ const ChatInput = ()=>{
   const dispatch = useDispatch();
   const conf = new Configuration(
     {
-      apiKey:'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'
+      apiKey:'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'
     }
   )
   const openai = new OpenAIApi(conf)
@@ -39,7 +39,7 @@ const ChatInput = ()=>{
         ]
       }
     ).then((res)=>{
-      // console.log(res.data.status);
+      console.log(res.data.status);
           let answer = res.data.choices[0]
           console.log(answer.message.role)
           console.log(answer.message.content)
